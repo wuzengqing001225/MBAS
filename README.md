@@ -1,5 +1,7 @@
 # MBAS: Modularization-Boosted Agent Simulator
 
+![Workflow](https://github.com/wuzengqing001225/MBAS/blob/main/IMG/title.jpg?raw=true)
+
 ## Contributor Information
 Prof. [Chuan Xiao](https://sites.google.com/site/chuanxiao1983/home) (Graduate School of Information Science and Technology, Osaka University) and [Zengqing Wu](https://wuzengqing001225.github.io/) (Osaka University)
 
