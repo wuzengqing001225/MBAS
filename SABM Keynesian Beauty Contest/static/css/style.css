@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.outer-container {
+    position: relative;
+    display: flex;
+}
+
+.container {
+    text-align: left;
+    position: relative;
+    background: darkblue;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all 1s ease;
+    color: white;
+    width: 50px;
+    z-index: 1; /* 蓝色 container 层级最低 */
+}
+
+.white-container {
+    position: absolute;
+    left: 10px; /* 与 container 的 padding 保持一致 */
+    top: 20px; /* 与 container 的 padding 保持一致 */
+    height: 85%;
+    width: 40px; /* 仅覆盖 MBAS */
+    background: white;
+    display: none; /* 初始隐藏 */
+    z-index: 2; /* 白色 container 层级较高 */
+}
+
+.initial {
+    font-size: 48px;
+    position: relative;
+    z-index: 3; /* 所有文字层级最高 */
+}
+
+.line {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 4; /* 所有文字层级最高 */
+}
+
+.initial span {
+    display: inline-block;
+    transition: all 1s ease;
+}
+
+.complete {
+    opacity: 0;
+    color: black;
+    background: white;
+    font-weight: normal;
+    font-family: Consolas;
+    margin-left: 0px; /* 去掉间隔 */
+    z-index: 5; /* 所有文字层级最高 */
+}
+
+.letter {
+    font-weight: bold;
+    color: white;
+    z-index: 6; /* 所有文字层级最高 */
+}
+
+#start-button {
+    position: relative;
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* 初始隐藏 */
+    transition: background-color 0.3s ease;
+}
+
+#start-button:hover, #run-button:hover {
+    background-color: lightblue;
+}
+
+.results-text {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap; /* 防止换行 */
+}

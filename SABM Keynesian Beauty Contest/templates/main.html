@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modularization Boosted Agent Simulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_main.css') }}">
+</head>
+<body>
+    <div id="content">
+        <div id="plot-container">
+            <img id="plot" src="{{ url_for('static', filename='images/placeholder.png') }}" alt="Variance Plot">
+        </div>
+        <div id="results"><b>Results:</b></div>
+        <button id="run-button">Run</button>
+    </div>
+    <script src="{{ url_for('static', filename='js/run.js') }}"></script>
+</body>
+</html>
